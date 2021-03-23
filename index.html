@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.68.3" />
+    <meta charset="utf-8">
+<title>GPUS</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/slides_gpu/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/slides_gpu/reveal-js/css/reveal.css"><link rel="stylesheet" href="/slides_gpu/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides_gpu/highlight-js/color-brewer.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="gpus">GPUS</h1>
+<p>Organização e Manutenção de Computadores</p>
+<p><a href="https://jp-guimaraes.github.io/">🌐 João Paulo Guimarães</a></p>
+</section>
+
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h1 id="objetivos">Objetivos</h1>
+<p>Conhecer requisitos para dimensionamento de GPUS</p>
+</section><section>
+<h1 id="sumário">Sumário</h1>
+<ol>
+<li>
+<p>O que são</p>
+</li>
+<li>
+<p>Características</p>
+</li>
+<li>
+<p>Benchmarks</p>
+</li>
+</ol>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="gpu">GPU</h1>
+<p>Hardware dedicado para processamento de vídeo</p>
+<p>Interface -&gt; PCIe (x16 geralmente)</p>
+<p>Saída ou não de vídeo
+(mineração de criptomoedas)</p>
+</section><section>
+<h1 id="características-relevantes">Características relevantes</h1>
+<p>FLOPS -&gt; Floating-point operations
+Operações de ponto flutuante por segundo</p>
+<p>Memória
+VRAM (GB)
+Frequência da memória (MHZ)</p>
+<p>Clock (MHZ)</p>
+<p>Potência (W)</p>
+<p>Score (G3D Mark)</p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="dimensionamento">Dimensionamento</h1>
+<p>Aplicação?</p>
+<p>Saída de vídeo?</p>
+<p>Tipo de monitores?</p>
+<p>Quantidade?</p>
+<p>TFlops?</p>
+</section><section>
+<h1 id="variáveis">Variáveis</h1>
+<p>Resolução (HD,FHD,2k,4k) -&gt; Quantidade de pixels</p>
+<p>Frequência de atualização do monitor (HZ) -&gt; Monitor alvo</p>
+</section><section>
+<h1 id="tearing">Tearing</h1>
+<p><img src="https://s2.glbimg.com/uPzqFwLghlNu4-V4HCTWwE9hwLU=/0x0:695x459/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/e/y/1wSkCnQKuSR5SEdx0MIw/amd-freesync.png" alt=""></p>
+<p>GSync</p>
+<p>Freesync</p>
+
+</section>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/slides_gpu/reveal-hugo/object-assign.js></script>
+
+<a href="/slides_gpu/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/slides_gpu/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/slides_gpu/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/slides_gpu/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides_gpu/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides_gpu/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/slides_gpu/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on GPU</title>
+    <link>https://jp-guimaraes.github.io/slides_gpu/home/</link>
+    <description>Recent content in Homes on GPU</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jp-guimaraes.github.io/slides_gpu/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_gpu/home/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_gpu/home/intro/</guid>
+      <description> Objetivos Conhecer requisitos para dimensionamento de GPUS
+ Sumário   O que são
+  Características
+  Benchmarks
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_gpu/home/gpus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_gpu/home/gpus/</guid>
+      <description> GPU Hardware dedicado para processamento de vídeo
+Interface -&amp;gt; PCIe (x16 geralmente)
+Saída ou não de vídeo (mineração de criptomoedas)
+ Características relevantes FLOPS -&amp;gt; Floating-point operations Operações de ponto flutuante por segundo
+Memória VRAM (GB) Frequência da memória (MHZ)
+Clock (MHZ)
+Potência (W)
+Score (G3D Mark)
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_gpu/home/dimensionamento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_gpu/home/dimensionamento/</guid>
+      <description> Dimensionamento Aplicação?
+Saída de vídeo?
+Tipo de monitores?
+Quantidade?
+TFlops?
+ Variáveis Resolução (HD,FHD,2k,4k) -&amp;gt; Quantidade de pixels
+Frequência de atualização do monitor (HZ) -&amp;gt; Monitor alvo
+ Tearing GSync
+Freesync
+ </description>
+    </item>
+    
+  </channel>
+</rss>

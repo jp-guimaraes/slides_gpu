@@ -1,1 +1,1 @@
-# slides_gpu
+[Slides](https://jp-guimaraes.github.io/slides_gpu/)

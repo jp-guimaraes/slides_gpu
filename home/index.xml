@@ -32,9 +32,12 @@
       <description> GPU Hardware dedicado para processamento de vídeo
 Interface -&amp;gt; PCIe (x16 geralmente)
 Saída ou não de vídeo (mineração de criptomoedas)
- Características relevantes FLOPS -&amp;gt; Floating-point operations Operações de ponto flutuante por segundo
-Memória VRAM (GB) Frequência da memória (MHZ)
-Clock (MHZ)
+ Características relevantes FLOPS -&amp;gt; Floating-point operations
+(Operações de ponto flutuante por segundo)
+Memória:
+  VRAM (GB)
+  Frequência da memória (MHZ)
+  Clock (MHZ)
 Potência (W)
 Score (G3D Mark)
  </description>
